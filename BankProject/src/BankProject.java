@@ -201,7 +201,7 @@ public class BankProject {
 		
 		long acc ;
 		int  year, register;
-		double balance = 0 ,interest=0, yearbalance=0, totalinterest=0;
+		double balance = 0 ,intrest=0, yearbalance=0, totalintrest=0;
 		
 		System.out.println("Enter Account Number: ");
 		acc = sc.nextLong();
@@ -218,10 +218,10 @@ public class BankProject {
 			System.out.println("Interest rate for this account is 2.0% per year.");
 			
 			for (int i = 0; i< year ; i++) {
-				interest = balance * 0.02;
-				totalinterest = interest + totalinterest;
+				intrest = balance * 0.02;
+				totalintrest = intrest + totalintrest;
 			}
-			yearbalance = balance + totalinterest;
+			yearbalance = balance + totalintrest;
 		}
 		else if(register > 10) {
 			System.out.print("How many year did you want to check saving Interest? ");
@@ -233,21 +233,21 @@ public class BankProject {
 			System.out.println("Interest rate for this account is 4.0% per year.");
 			
 			for(int i = 0 ; i< year ; i++) {
-				interest = balance * 0.04;
-				totalinterest = interest + totalinterest;
+				intrest = balance * 0.04;
+				totalintrest = intrest + totalintrest;
 				
 			}
-			yearbalance = balance + totalinterest;
+			yearbalance = balance + totalintrest;
 			
 			int[] gift1 = gift1();
 		}
 		
 		System.out.println();
-		System.out.println("***");
-		printMethod(acc, interest, totalinterest, balance, yearbalance);
+		System.out.println("*");
+		printMethod(acc, intrest, totalintrest, balance, yearbalance);
 		
 		System.out.println("\n*Thank You For Using Our Services*");
-		System.out.println("***");
+		System.out.println("*");
 		sc.close();
 
 	}
